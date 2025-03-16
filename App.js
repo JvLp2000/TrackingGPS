@@ -7,10 +7,7 @@ const OPENROUTE_API_KEY = ""; // 🔑 Insira sua API Key do OpenRouteService
 
 export default function App() {
   const [location, setLocation] = useState(null);
-  const [destination, setDestination] = useState(""); // Endereço digitado
-  const [destinationCoords, setDestinationCoords] = useState(null); // Coordenadas do destino
   const [coords, setCoords] = useState([]); // Caminho percorrido
-  const [route, setRoute] = useState([]); // Rota fixa até o destino
 
   useEffect(() => {
     (async () => {

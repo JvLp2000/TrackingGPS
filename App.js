@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, StyleSheet, Alert } from "react-native";
 import MapView, { Marker, Polyline } from "react-native-maps";
 import * as Location from "expo-location";
 
-const OPENROUTE_API_KEY = ""; // 🔑 Insira sua API Key do OpenRouteService
+const OPENROUTE_API_KEY = ""; 
 
 export default function App() {
   const [location, setLocation] = useState(null);
